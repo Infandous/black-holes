@@ -2,7 +2,11 @@ import blackHoleHomepage from '../images/blackholeHomepage.jpg'
 import blackHoleEventHorizen from '../images/blackHoleEventHorizen.jpg'
 import './Intro.css'
 
-const Intro = () => {
+const Intro = ({toursFunc}) => {
+    const handleToursClick=(event)=>{
+        event.stopPropagation();
+        toursFunc()
+    }
     return(
         <div className="intro">
             <div className="imgDiv">
@@ -63,8 +67,12 @@ const Intro = () => {
                 <br />
                 <hr />
                 <br />
-                If you're now ready to embark on the most amazing journey of a lifetime, check out our tours page today
+                If you're now ready to embark on the most amazing journey of a lifetime, check out
+                our <button className="pButton" onClick={handleToursClick}>tours</button> page today
                 and see what we have to offer!
+                <br />
+                <hr />
+                
                 </p>
         </div>
     )
