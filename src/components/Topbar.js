@@ -1,11 +1,11 @@
 import './Topbar.css'
-const Topbar = () => {
+const Topbar = (props) => {
     return(
         <div className='topbar'>
-            <h1>Black Hole Travel Guide</h1>
-            <button>Tours</button>
-            <button>about us</button>
-            <button>sources</button>
+            <button className='homeButton' onClick={props.homeFunc}><h1>Black Hole Travel Guide</h1></button>
+            <button className='otherButton' onClick={props.toursFunc}>Tours</button>
+            <button className='otherButton'>about us</button>
+            <button className='otherButton'>sources</button>
         </div> 
     )
 }

@@ -8,19 +8,33 @@ function App() {
   //initial state is home
   const [home, setHome] = useState(true)
   const [henize_2_10, setHenize_2_10] = useState(false)
+  const [tours, setTours] = useState(false)
 
+  const activate_henize_2_10 = () => {
+    setHome(false)
+    setHenize_2_10(true)
+  }
+
+  const activateTours = () => {
+    setHome(false)
+    setTours(true)
+  }
+  const activateHome = () => {
+    setHome(true)
+    setTours(false)
+  }
 
   if (home){
     return (
       <div className='app'>
-        <Topbar />
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
         <Intro />
       </div> 
     )
-  }else if (henize_2_10){
+  }else if (tours){
     return(
       <div>
-
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
       </div>
     )
   }
