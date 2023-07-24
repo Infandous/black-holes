@@ -4,7 +4,7 @@ import './Intro.css'
 const Intro = () => {
     return(
         <div className="intro">
-            <div>
+            <div className="imgDiv">
                 <img src={blackHoleHomepage} alt="image of black hole" />
                 <h5>source: NASA</h5>
             </div>
@@ -18,7 +18,7 @@ const Intro = () => {
                 at which the necessary velocity to withstand the pull of the black hole is greater than the
                 speed of light.
                 <br />
-                There are two
+                There are two main "classes" of black holes
                 </p>
         </div>
     )
