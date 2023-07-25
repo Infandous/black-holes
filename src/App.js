@@ -144,7 +144,7 @@ const tourList = [
         <br />
         <br />
         <br />
-        <BlackHole obj={tourList[3]}/>
+        <BlackHole obj={tourList[2]}/>
         <Footer />
       </div>
     )
