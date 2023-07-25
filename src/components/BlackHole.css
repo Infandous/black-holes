@@ -8,3 +8,20 @@
     width:40%;
     height:auto;
 }
+
+hr{
+    color:orange;
+}
+
+
+.blackHoleInfo>button{
+    border:solid;
+    border-radius:1px;
+    border-color:black;
+    opacity:0.8;
+}
+.blackHoleInfo>button:hover{
+    background-color: orange; 
+    opacity:1;
+    transform: scale(1.1)
+}

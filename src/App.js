@@ -8,6 +8,8 @@ import sagittarius_a_img from './images/sagittarius_a.jpg'
 import ton_618_img from './images/ton_618.jpg'
 import henize_2_10_img from './images/henize_2_10.jpg'
 import BlackHole from './components/BlackHole'
+import About from './components/About'
+import Sources from './components/Sources'
 import starData from './data/db.json'
 //import data from './data/db.json'
 
@@ -17,6 +19,8 @@ function App() {
   //initial state is home
   const [home, setHome] = useState(true)
   const [tours, setTours] = useState(false)
+  const [about,setAbout] = useState(false)
+  const [sources, setSources] = useState(false)
   const [sagittarius_a, setSagittarius_a] = useState(false)
   const [ton_618, setTon_618] = useState(false)
   const [henize_2_10, setHenize_2_10] = useState(false)
@@ -24,6 +28,8 @@ function App() {
   const activate_henize_2_10 = () => {
     setHome(false)
     setTours(false)
+    setAbout(false)
+    setSources(false)
     setSagittarius_a(false)
     setTon_618(false)
     setHenize_2_10(true)
@@ -32,6 +38,8 @@ function App() {
   const activate_ton_618 = () => {
     setHome(false)
     setTours(false)
+    setAbout(false)
+    setSources(false)
     setSagittarius_a(false)
     setTon_618(true)
     setHenize_2_10(false)
@@ -40,6 +48,8 @@ function App() {
   const activate_sagittarius_a = () => {
     setHome(false)
     setTours(false)
+    setAbout(false)
+    setSources(false)
     setSagittarius_a(true)
     setTon_618(false)
     setHenize_2_10(false)
@@ -48,6 +58,8 @@ function App() {
   const activateTours = () => {
     setHome(false)
     setTours(true)
+    setAbout(false)
+    setSources(false)
     setSagittarius_a(false)
     setTon_618(false)
     setHenize_2_10(false)
@@ -55,6 +67,26 @@ function App() {
   const activateHome = () => {
     setHome(true)
     setTours(false)
+    setAbout(false)
+    setSources(false)
+    setSagittarius_a(false)
+    setTon_618(false)
+    setHenize_2_10(false)
+  }
+  const activateAbout = () => {
+    setHome(false)
+    setTours(false)
+    setAbout(true)
+    setSources(false)
+    setSagittarius_a(false)
+    setTon_618(false)
+    setHenize_2_10(false)
+  }
+  const activateSources = () => {
+    setHome(false)
+    setTours(false)
+    setAbout(false)
+    setSources(true)
     setSagittarius_a(false)
     setTon_618(false)
     setHenize_2_10(false)
@@ -103,7 +135,7 @@ function App() {
   if (home){
     return (
       <div className='app'>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <Intro toursFunc={activateTours}/>
         <Footer />
       </div> 
@@ -111,7 +143,7 @@ function App() {
   }else if (tours){
     return(
       <div>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <br />
         <br />
         <br />
@@ -130,7 +162,7 @@ function App() {
   }else if (sagittarius_a){
     return(
       <div>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <br />
         <br />
         <br />
@@ -141,7 +173,7 @@ function App() {
   }else if (ton_618){
     return(
       <div>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <br />
         <br />
         <br />
@@ -152,7 +184,7 @@ function App() {
   }else if (henize_2_10){
     return(
       <div>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <br />
         <br />
         <br />
@@ -160,10 +192,34 @@ function App() {
         <Footer />
       </div>
     )
+  }else if(about){
+    return(
+      <div>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
+        <br />
+        <br />
+        <br />
+        <br/>
+        <About />
+        <Footer />
+      </div>
+    )
+  }else if (sources){
+    return(
+      <div>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
+        <br />
+        <br />
+        <br />
+        <br/>
+        <Sources />
+        <Footer />
+      </div>
+    )
   }else{
     return (
       <div className='app'>
-        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
         <Intro toursFunc={activateTours}/>
         <Footer />
       </div> 
