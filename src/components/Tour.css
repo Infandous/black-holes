@@ -1,0 +1,24 @@
+
+.tour{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-bottom:4px solid orange;
+}
+
+.tour>img{
+    width:50%;
+    height:auto;
+}
+
+.tour>button{
+    border:solid;
+    border-radius:1px;
+    border-color:black;
+    opacity:0.8;
+}
+.tour>button:hover{
+    background-color: orange; 
+    opacity:1;
+    transform: scale(1.1)
+}

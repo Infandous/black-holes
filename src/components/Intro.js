@@ -22,7 +22,7 @@ const Intro = ({toursFunc}) => {
                 Everything around the black hole is pulled down to a  point of zero volume and infinite density
                 known as a singularity.
                 <br/>
-                <hr />
+                <span><hr /></span>
                 <br/>
                 Every black hole has a characteristic known as an event horizon. The event horizon is the point
                 at which the necessary velocity to withstand the pull of the black hole is greater than the
@@ -40,12 +40,12 @@ const Intro = ({toursFunc}) => {
                 compression perpendicularly. Worry not though, on our tour we won't dare venture this close to the black hole
                 and instead maintain a stable orbit around this stellar mass on our journey.
                 <br />
-                <hr />
+                <span><hr /></span>
                 <br />
                 <img src={blackHoleEventHorizen} alt="black hole event horizen" />
-                <h5><a href="https://www.universetoday.com/42471/event-horizon/">source: universtoday.com</a> </h5>
+                <span><h5><a href="https://www.universetoday.com/42471/event-horizon/">source: universtoday.com</a> </h5></span>
                 <br />
-                <hr />
+                <span><hr /></span>
                 There are two <a href="https://imagine.gsfc.nasa.gov/science/objects/black_holes1.html">main "classes" of black holes</a>,
                 stellar-mass black holes, and supermassive black holes. While Stellar-mass black holes are around five to twenty
                 times the mass of our sun, supermassive black holes contains millions to billions of times greater stellar mass.
@@ -53,7 +53,7 @@ const Intro = ({toursFunc}) => {
                 book a tour for! Now there is third class posited to exist known as intermediate-mass black holes, however research
                 into these are fairly new with just a few candidate objects that we know of in the universe.
                 <br />
-                <hr />
+                <span><hr /></span>
                 <br />
                 <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">The formation fo black holes</a>
                 is of immense interest. Stellar-mass black holes can form when stars greater than 20 stellar-masses collapse into supernovas.
@@ -65,13 +65,13 @@ const Intro = ({toursFunc}) => {
                 almost <a href="https://www.ligo.caltech.edu/news/ligo20160211">1.3 billion years ago</a>!
                 These black holes are estimated to be around 29 and 36 times the mass of our sun.
                 <br />
-                <hr />
+                <span><hr /></span>
                 <br />
                 If you're now ready to embark on the most amazing journey of a lifetime, check out
                 our <button className="pButton" onClick={handleToursClick}>tours</button> page today
                 and see what we have to offer!
                 <br />
-                <hr />
+                <span><hr /></span>
                 
                 </p>
         </div>

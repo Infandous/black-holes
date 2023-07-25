@@ -4,28 +4,30 @@ import Topbar from './components/Topbar'
 import Intro from './components/Intro'
 import Footer from './components/Footer'
 import Tour from './components/Tour'
-import sagittarius_a from './images/sagittarius_a.jpg'
+import sagittarius_a_img from './images/sagittarius_a.jpg'
+import ton_618_img from './images/ton_618.jpg'
+import henize_2_10 from './images/henize_2_10.jpg'
 
 const tourList = [
   {
-    image: sagittarius_a,
+    image: sagittarius_a_img,
     altDescription: "Sagittarius A photo",
     tourName: "Sagittarius A",
     description: "Our most popular tour. Take a journey to the center of our very own Milky Way!",
     id:1
   },
   {
-    image: "",
-    altDescription: "",
-    tourName: "",
-    description: "",
+    image: ton_618_img,
+    altDescription: "TON 618 picture",
+    tourName: "TON 618",
+    description: "Experience the awe power of the largest known black hole",
     id:2
   },
   {
-    image: "",
-    altDescription: "",
-    tourName: "",
-    description: "",
+    image: henize_2_10,
+    altDescription: "Henize_2_10",
+    tourName: "Henize 2-10",
+    description: "Experience the black hole creating a galaxy",
     id:3
   },
 ]
@@ -34,8 +36,11 @@ function App() {
   //set initial states for changes to main app render
   //initial state is home
   const [home, setHome] = useState(true)
-  const [henize_2_10, setHenize_2_10] = useState(false)
+  //const [henize_2_10, setHenize_2_10] = useState(false)
   const [tours, setTours] = useState(false)
+  const [sagittarius_a, setSagittarius_a] = useState(false)
+  const [ton_618, setTon_618] = useState(false)
+  const [henize_2_10, setHenize_2_10] = useState(false)
 
   const activate_henize_2_10 = () => {
     setHome(false)
@@ -44,11 +49,15 @@ function App() {
 
   const activateTours = () => {
     setHome(false)
+    setSagittarius_a(false)
+    setTon_618(false)
     setTours(true)
   }
   const activateHome = () => {
-    setHome(true)
     setTours(false)
+    setSagittarius_a(false)
+    setTon_618(false)
+    setHome(true)
   }
 
   if (home){
@@ -67,15 +76,21 @@ function App() {
         <br />
         <br />
         <br /> 
-        <ul>
+        
           {tourList.map(tour=>{
             return(
-              <li><Tour key={tour.id} image={tour.image} altDescription={tour.altDescription}
-                tourName={tour.tourName} description={tour.description} /></li>
+              <Tour key={tour.id} image={tour.image} altDescription={tour.altDescription}
+                tourName={tour.tourName} description={tour.description} />
             )
           })}
-        </ul>
+        
         <Footer />
+      </div>
+    )
+  }else if (sagittarius_a){
+    return(
+      <div>
+        
       </div>
     )
   }
