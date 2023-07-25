@@ -8,12 +8,12 @@ import sagittarius_a_img from './images/sagittarius_a.jpg'
 import ton_618_img from './images/ton_618.jpg'
 import henize_2_10_img from './images/henize_2_10.jpg'
 import BlackHole from './components/BlackHole'
+import starData from './data/db.json'
 
 function App() {
   //set initial states for changes to main app render
   //initial state is home
   const [home, setHome] = useState(true)
-  //const [henize_2_10, setHenize_2_10] = useState(false)
   const [tours, setTours] = useState(false)
   const [sagittarius_a, setSagittarius_a] = useState(false)
   const [ton_618, setTon_618] = useState(false)
@@ -58,35 +58,35 @@ function App() {
     setHenize_2_10(false)
   }
 
-  const tourList = [
-    {
-      image: sagittarius_a_img,
-      altDescription: "Sagittarius A photo",
-      tourName: "Sagittarius A",
-      shortDescription: "Our most popular tour. Take a journey to the center of our very own Milky Way!",
-      description:"",
-      func: activate_sagittarius_a,
-      id:1
-    },
-    {
-      image: ton_618_img,
-      altDescription: "TON 618 picture",
-      tourName: "TON 618",
-      shortDescription: "Experience the awe power of the largest known black hole",
-      description:"",
-      func:activate_ton_618,
-      id:2
-    },
-    {
-      image: henize_2_10_img,
-      altDescription: "Henize_2_10",
-      tourName: "Henize 2-10",
-      shortDescription: "Experience the black hole creating a galaxy",
-      description:"",
-      func: activate_henize_2_10,
-      id:3
-    },
-  ]
+const tourList = [
+  {
+    image: sagittarius_a_img,
+    altDescription: starData[0].altDescription,
+    tourName: starData[0].tourName,
+    shortDescription: starData[0].shortDescription,
+    description:starData[0].description,
+    func: activate_sagittarius_a,
+    id:Number(starData[0].id)
+  },
+  {
+    image: ton_618_img,
+    altDescription: starData[1].altDescription,
+    tourName: starData[1].tourName,
+    shortDescription: starData[1].shortDescription,
+    description:starData[1].description,
+    func: activate_ton_618,
+    id:Number(starData[1].id)
+  },
+  {
+    image: henize_2_10_img,
+    altDescription: starData[2].altDescription,
+    tourName: starData[2].tourName,
+    shortDescription: starData[2].shortDescription,
+    description:starData[2].description,
+    func: activate_henize_2_10,
+    id:Number(starData[2].id)
+  },
+]
 
   if (home){
     return (
