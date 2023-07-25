@@ -1,11 +1,12 @@
 import './BlackHole.css'
+import HtmlReactParser from 'html-react-parser'
 
 const BlackHole = ({obj}) => {
     return(
         <div>
             <h1>{obj.name}</h1>
             <img src={obj.image} alt={`${obj.name}`} />
-            {obj.description} 
+            {HtmlReactParser(obj.description)}
         </div>
     )
 }
