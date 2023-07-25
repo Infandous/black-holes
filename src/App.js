@@ -116,17 +116,47 @@ const tourList = [
       </div>
     )
   }else if (sagittarius_a){
-    return <BlackHole obj={tourList[0]}/>
+    return(
+      <div>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <br />
+        <br />
+        <br />
+        <BlackHole obj={tourList[0]}/>
+        <Footer />
+      </div>
+    )
   }else if (ton_618){
-    return <BlackHole obj={tourList[1]}/>
+    return(
+      <div>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <br />
+        <br />
+        <br />
+        <BlackHole obj={tourList[1]}/>
+        <Footer />
+      </div>
+    )
   }else if (henize_2_10){
-    return <BlackHole obj={tourList[2]}/>
+    return(
+      <div>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <br />
+        <br />
+        <br />
+        <BlackHole obj={tourList[3]}/>
+        <Footer />
+      </div>
+    )
+  }else{
+    return (
+      <div className='app'>
+        <Topbar homeFunc={activateHome} toursFunc={activateTours}/>
+        <Intro toursFunc={activateTours}/>
+        <Footer />
+      </div> 
+    )
   }
-  return(
-    <div>
-      
-    </div>
-  )
 }
 
 export default App;
