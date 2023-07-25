@@ -9,8 +9,10 @@ import ton_618_img from './images/ton_618.jpg'
 import henize_2_10_img from './images/henize_2_10.jpg'
 import BlackHole from './components/BlackHole'
 import starData from './data/db.json'
+//import data from './data/db.json'
 
 function App() {
+  //const starData = JSON.parse(data)
   //set initial states for changes to main app render
   //initial state is home
   const [home, setHome] = useState(true)

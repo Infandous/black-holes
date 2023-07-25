@@ -55,8 +55,8 @@ const Intro = ({toursFunc}) => {
                 <br />
                 <span><hr /></span>
                 <br />
-                <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">The formation fo black holes</a>
-                is of immense interest. Stellar-mass black holes can form when stars greater than 20 stellar-masses collapse into supernovas.
+                <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">The formation fo black holes</a> is 
+                of immense interest. Stellar-mass black holes can form when stars greater than 20 stellar-masses collapse into supernovas.
                 In the aftermass of these expolosions, the core, if it contains a mass greater than three times that of our sun, can continue
                 to collapse forming a black hole. Less is known about supermassive black holes, however scientists understand these behemoths
                 to be ancient artifacts of the earliest days of a galaxy. Upon the birth of a black hole, it can grow by sucking up all the 

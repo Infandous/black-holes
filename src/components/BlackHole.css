@@ -1,0 +1,10 @@
+.blackHoleInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.blackHoleInfo>img{
+    width:40%;
+    height:auto;
+}
