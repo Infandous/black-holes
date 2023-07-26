@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/black-holes/static/css/main.c4b7e480.css",
-    "main.js": "/black-holes/static/js/main.f526cf37.js",
+    "main.js": "/black-holes/static/js/main.19f6cbe4.js",
     "static/media/blackholeHomepage.jpg": "/black-holes/static/media/blackholeHomepage.e42b15c3ce7faaf92986.jpg",
     "static/media/henize_2_10.jpg": "/black-holes/static/media/henize_2_10.6785f3f02fa77f6b547c.jpg",
     "static/media/blackHoleEventHorizen.jpg": "/black-holes/static/media/blackHoleEventHorizen.f9bebb7bc8b6b68fe177.jpg",
     "index.html": "/black-holes/index.html",
     "main.c4b7e480.css.map": "/black-holes/static/css/main.c4b7e480.css.map",
-    "main.f526cf37.js.map": "/black-holes/static/js/main.f526cf37.js.map"
+    "main.19f6cbe4.js.map": "/black-holes/static/js/main.19f6cbe4.js.map"
   },
   "entrypoints": [
     "static/css/main.c4b7e480.css",
-    "static/js/main.f526cf37.js"
+    "static/js/main.19f6cbe4.js"
   ]
 }
