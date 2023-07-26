@@ -11,7 +11,7 @@ function initializeReactGA() {
 }
 
 initializeReactGA();*/
-ReactGA.initialize("G-SQH7XMMNM4")
+ReactGA.initialize("G-E63YEYTN1L")
 
 
 const root = ReactDOM.createRoot(document.getElementById('root')).render(<App />)
