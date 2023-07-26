@@ -1,4 +1,5 @@
 
+
 .footerDiv{
     display:flex;
     flex-direction:row;
@@ -10,4 +11,12 @@
 
 .footerDiv>a{
     color:black;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+h5{
+    transform:scale(0.8)
 }

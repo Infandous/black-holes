@@ -2,7 +2,7 @@ import './Footer.css'
 const Footer = () => {
     return(
         <div className="footerDiv">
-            <h1>Black Hole Travel Guide Ventures Limited</h1>
+            <h5>Black Hole Travel Guide Ventures Limited</h5>
             <a href="mailto:">blackHoleTravel@eventhorizen.com</a>
             <address>
                 <strong>Planet Earth</strong><br />

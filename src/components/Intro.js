@@ -18,7 +18,7 @@ const Intro = ({toursFunc}) => {
                 Here we aim to make your wildest dreams 
                 of visiting a black hole come true!
                 According to <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">NASA</a>, 
-                black holes are object that have such strong gravitational pulls that not even light can escape.
+                black holes are objects that have such strong gravitational pulls that not even light can escape.
                 Everything around the black hole is pulled down to a  point of zero volume and infinite density
                 known as a singularity.
                 <br/>
@@ -48,14 +48,14 @@ const Intro = ({toursFunc}) => {
                 <span><hr /></span>
                 There are two <a href="https://imagine.gsfc.nasa.gov/science/objects/black_holes1.html">main "classes" of black holes</a>,
                 stellar-mass black holes, and supermassive black holes. While Stellar-mass black holes are around five to twenty
-                times the mass of our sun, supermassive black holes contains millions to billions of times greater stellar mass.
+                times the mass of our sun, supermassive black holes contain millions to billions of times greater stellar mass.
                 Supermassive black holes are found at the center of galaxies. Yes there is even one in our galaxy, which you can
                 book a tour for! Now there is third class posited to exist known as intermediate-mass black holes, however research
                 into these are fairly new with just a few candidate objects that we know of in the universe.
                 <br />
                 <span><hr /></span>
                 <br />
-                <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">The formation fo black holes</a> is 
+                <a href="https://www.nasa.gov/vision/universe/starsgalaxies/black_hole_description.html">The formation of black holes</a> is 
                 of immense interest. Stellar-mass black holes can form when stars greater than 20 stellar-masses collapse into supernovas.
                 In the aftermass of these expolosions, the core, if it contains a mass greater than three times that of our sun, can continue
                 to collapse forming a black hole. Less is known about supermassive black holes, however scientists understand these behemoths

@@ -136,6 +136,7 @@ function App() {
     return (
       <div className='app'>
         <Topbar homeFunc={activateHome} toursFunc={activateTours} aboutFunc={activateAbout} sourcesFunc={activateSources}/>
+        <br/><br/><br/>
         <Intro toursFunc={activateTours}/>
         <Footer />
       </div> 
@@ -147,7 +148,8 @@ function App() {
         <br />
         <br />
         <br />
-        <br /> 
+        <br />
+        <br/> 
         
           {tourList.map(tour=>{
             return(
